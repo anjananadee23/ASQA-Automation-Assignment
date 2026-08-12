@@ -7,12 +7,12 @@ import pages.CartPage;
 import pages.ProductsPage;
 
 /**
- * Automates TC11 (site's official "Test Case 12: Add Products in Cart").
+ * Automates TC09 (site's official "Test Case 12: Add Products in Cart").
  */
 @Listeners(listeners.TestListener.class)
 public class CartTests extends BaseTest {
 
-    @Test(description = "TC11 - Add a product to the cart")
+    @Test(description = "TC09 - Add a product to the cart")
     public void testAddProductToCart() {
         ProductsPage productsPage = homePage.goToProducts();
 
