@@ -5,25 +5,19 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.SignupLoginPage;
-import utils.ConfigReader;
+import utils.DataProviders;
 
 /**
  * Automates TC04 (site's official "Test Case 2: Login User with correct email and password")
  * and TC05 ("Test Case 3: Login User with incorrect email and password").
- *
- * IMPORTANT: Update VALID_EMAIL / VALID_PASSWORD with an account that actually exists
- * (e.g., register one manually first, or reuse the email printed by RegistrationTests).
  */
 @Listeners(listeners.TestListener.class)
 public class LoginTests extends BaseTest {
 
-    private static final String VALID_EMAIL    = ConfigReader.get("validEmail");
-    private static final String VALID_PASSWORD  = ConfigReader.get("validPassword");
-
-    @Test(description = "TC04 - Login with correct email and password")
-    public void testValidLogin() {
+    @Test(description = "TC04 - Login with correct email and password", dataProvider = "validLoginData", dataProviderClass = DataProviders.class)
+    public void testValidLogin(String email, String password) {
         SignupLoginPage signupLoginPage = homePage.goToSignupLogin();
-        HomePage loggedInHome = signupLoginPage.login(VALID_EMAIL, VALID_PASSWORD);
+        HomePage loggedInHome = signupLoginPage.login(email, password);
 
         Assert.assertTrue(
                 loggedInHome.isLoggedIn(),
@@ -31,10 +25,10 @@ public class LoginTests extends BaseTest {
         );
     }
 
-    @Test(description = "TC05 - Login fails with incorrect email/password")
-    public void testLoginWithIncorrectCredentials() {
+    @Test(description = "TC05 - Login fails with incorrect email/password", dataProvider = "invalidLoginData", dataProviderClass = DataProviders.class)
+    public void testLoginWithIncorrectCredentials(String email, String password) {
         SignupLoginPage signupLoginPage = homePage.goToSignupLogin();
-        signupLoginPage.loginExpectingFailure("not.a.real.user@example.com", "WrongPassword123");
+        signupLoginPage.loginExpectingFailure(email, password);
 
         String actualError = signupLoginPage.getLoginErrorMessage();
         Assert.assertTrue(

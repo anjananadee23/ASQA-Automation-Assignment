@@ -35,4 +35,8 @@ public class WaitUtils {
     public boolean waitForTextPresent(By locator, String text) {
         return wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, text));
     }
+
+    public boolean waitForInvisible(By locator) {
+        return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    }
 }

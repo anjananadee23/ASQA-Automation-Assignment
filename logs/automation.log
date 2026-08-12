@@ -1,0 +1,14 @@
+2026-08-12 12:13:37 [main] INFO  listeners.TestListener - Test Suite Started: Regression Tests
+2026-08-12 12:13:43 [main] INFO  listeners.TestListener - STARTING TEST: testUserCanRegisterWithValidDetails
+2026-08-12 12:13:56 [main] INFO  listeners.TestListener - PASSED: testUserCanRegisterWithValidDetails
+2026-08-12 12:14:01 [main] INFO  listeners.TestListener - STARTING TEST: testLoginWithIncorrectCredentials
+2026-08-12 12:14:05 [main] INFO  listeners.TestListener - PASSED: testLoginWithIncorrectCredentials
+2026-08-12 12:14:13 [main] INFO  listeners.TestListener - STARTING TEST: testLoginWithIncorrectCredentials
+2026-08-12 12:14:17 [main] INFO  listeners.TestListener - PASSED: testLoginWithIncorrectCredentials
+2026-08-12 12:14:23 [main] INFO  listeners.TestListener - STARTING TEST: testValidLogin
+2026-08-12 12:14:30 [main] INFO  listeners.TestListener - PASSED: testValidLogin
+2026-08-12 12:14:36 [main] INFO  listeners.TestListener - STARTING TEST: testSearchReturnsResults
+2026-08-12 12:14:40 [main] INFO  listeners.TestListener - PASSED: testSearchReturnsResults
+2026-08-12 12:14:45 [main] INFO  listeners.TestListener - STARTING TEST: testAddProductToCart
+2026-08-12 12:14:53 [main] INFO  listeners.TestListener - PASSED: testAddProductToCart
+2026-08-12 12:14:53 [main] INFO  listeners.TestListener - Test Suite Finished: Regression Tests

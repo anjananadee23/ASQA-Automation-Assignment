@@ -22,7 +22,7 @@ public class BaseTest {
         homePage = new HomePage(DriverManager.getDriver());
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         DriverManager.quitDriver();
     }
