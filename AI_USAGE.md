@@ -18,4 +18,4 @@ This project used AI assistants (including Google's Gemini AI) during preparatio
 - Made Git commits incrementally, validating each part of the codebase.
 
 ## Verification
-I confirm I understand every locator, method, and assertion in this codebase (including the reporting and logging enhancements) and can explain any part of it during the viva.
+I confirm I understand every locator, method, and assertion in this codebase (including the reporting and logging enhancements) and can explain any part of it.
