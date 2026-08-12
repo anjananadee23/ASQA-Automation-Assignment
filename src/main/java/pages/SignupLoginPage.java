@@ -19,7 +19,7 @@ public class SignupLoginPage extends BasePage {
     private final By loginEmailInput = By.cssSelector("input[data-qa='login-email']");
     private final By loginPasswordInput = By.cssSelector("input[data-qa='login-password']");
     private final By loginButton = By.cssSelector("button[data-qa='login-button']");
-    private final By loginErrorMessage = By.cssSelector("form[action='/login'] p"); // "Your email or password is incorrect!"
+    private final By loginErrorMessage = By.cssSelector("form[action='/login'] p");
 
     public SignupLoginPage(WebDriver driver) {
         super(driver);
@@ -33,7 +33,10 @@ public class SignupLoginPage extends BasePage {
         return new AccountInformationPage(driver);
     }
 
-    /** Attempts signup expecting it to fail (e.g., duplicate email) and stay on this page. */
+    /**
+     * Attempts signup expecting it to fail (e.g., duplicate email) and stay on this
+     * page.
+     */
     public SignupLoginPage signupExpectingFailure(String name, String email) {
         type(signupNameInput, name);
         type(signupEmailInput, email);
@@ -45,7 +48,9 @@ public class SignupLoginPage extends BasePage {
         return getText(signupErrorMessage);
     }
 
-    /** Logs in with valid credentials and lands on the (now logged-in) home page. */
+    /**
+     * Logs in with valid credentials and lands on the (now logged-in) home page.
+     */
     public HomePage login(String email, String password) {
         type(loginEmailInput, email);
         type(loginPasswordInput, password);
