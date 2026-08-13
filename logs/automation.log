@@ -1,8 +1,8 @@
-2026-08-12 23:33:05 [main] INFO  listeners.TestListener - Test Suite Started: Surefire test
-2026-08-12 23:33:17 [main] INFO  listeners.TestListener - STARTING TEST: testLoginWithIncorrectCredentials
-2026-08-12 23:33:23 [main] INFO  listeners.TestListener - PASSED: testLoginWithIncorrectCredentials
-2026-08-12 23:33:31 [main] INFO  listeners.TestListener - STARTING TEST: testLoginWithIncorrectCredentials
-2026-08-12 23:33:36 [main] INFO  listeners.TestListener - PASSED: testLoginWithIncorrectCredentials
-2026-08-12 23:33:43 [main] INFO  listeners.TestListener - STARTING TEST: testValidLogin
-2026-08-12 23:33:49 [main] INFO  listeners.TestListener - PASSED: testValidLogin
-2026-08-12 23:33:49 [main] INFO  listeners.TestListener - Test Suite Finished: Surefire test
+2026-08-13 13:12:56 [main] INFO  listeners.TestListener - Test Suite Started: Surefire test
+2026-08-13 13:13:07 [main] INFO  listeners.TestListener - STARTING TEST: testLoginWithIncorrectCredentials
+2026-08-13 13:13:13 [main] INFO  listeners.TestListener - PASSED: testLoginWithIncorrectCredentials
+2026-08-13 13:13:22 [main] INFO  listeners.TestListener - STARTING TEST: testLoginWithIncorrectCredentials
+2026-08-13 13:13:28 [main] INFO  listeners.TestListener - PASSED: testLoginWithIncorrectCredentials
+2026-08-13 13:13:35 [main] INFO  listeners.TestListener - STARTING TEST: testValidLogin
+2026-08-13 13:13:44 [main] INFO  listeners.TestListener - PASSED: testValidLogin
+2026-08-13 13:13:44 [main] INFO  listeners.TestListener - Test Suite Finished: Surefire test
